@@ -12,4 +12,4 @@ $harry->mort(); // false
 
 var_dump($merlin); // -> accède à l'élement
 
-var_dump($harry->mort()); 
+//var_dump($harry->mort()); 
