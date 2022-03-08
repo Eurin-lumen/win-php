@@ -16,7 +16,7 @@ class Personnage
         $this->nom = $nom;
     }
     public function mort(){
-        $this->vie = 0;
+       return $this->vie == 0;
     }
 
     public function regenerer(){
