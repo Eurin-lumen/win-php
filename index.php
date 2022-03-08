@@ -2,13 +2,12 @@
 
 require 'Personnage.php';
 
-$merlin = new Personnage();
+$merlin = new Personnage("Merlin");
+
 $merlin->regenerer();
 
 // nouveau personnages
-$harry = new Personnage();
-$harry->perte();
-
+$harry = new Personnage("Harry");
 
 var_dump($merlin); // -> accède à l'élement
 
