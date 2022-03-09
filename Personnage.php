@@ -27,4 +27,14 @@ class Personnage
         }
    }
 
+
+   public function attaque($cible){
+
+
+        $cible->vie -= $this->atk;
+    $cible->vie=20;
+    
+    var_dump($cible);
+
+   }
 }
