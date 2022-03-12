@@ -8,7 +8,7 @@ class Personnage
     // public pour la visibilité de la variable 
     public $vie = 80;
     public $atk = 20;
-    public $nom;
+    private $nom;
     //creer des 
     // un contructeur
     public function __construct($nom){
@@ -17,6 +17,11 @@ class Personnage
     }
     public function mort(){
        return $this->vie <= 0;
+    }
+
+    // fonction pour accéder a la propriété privé
+    public function getNom(){
+        return $this ->nom;
     }
 
    public function regenerer($vie = null){
